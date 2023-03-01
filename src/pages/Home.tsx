@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export const Home = () => {
+export const Home = (): React.ReactElement => {
   return <RedBox>Home</RedBox>;
 };
 
