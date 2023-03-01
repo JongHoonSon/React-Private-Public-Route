@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 export const MyPage = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // check user logged in
+    const isUserLoggedIn = false;
+
+    if (!isUserLoggedIn) {
+      navigate("/");
+    }
+  }, []);
+
   return <BlueBox>MyPage</BlueBox>;
 };
 
