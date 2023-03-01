@@ -1,19 +1,7 @@
-import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 import styled from "styled-components";
 
-export const MyPage = () => {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    // check user logged in
-    const isUserLoggedIn = false;
-
-    if (!isUserLoggedIn) {
-      navigate("/");
-    }
-  }, []);
-
+export const MyPage = (): React.ReactElement => {
   return <BlueBox>MyPage</BlueBox>;
 };
 
